@@ -33,6 +33,6 @@ class JenkinsSampleProjectTests: XCTestCase {
     
     func testCoffeeRegion() throws {
         XCTAssertTrue(CoffeeLocator.shared.getCoffeeRegion(with: .caramel).lowercased() == "colombia")
-        XCTAssertTrue(CoffeeLocator.shared.getCoffeeRegion(with: .fruit).lowercased() == "Ethiopiaa")
+        XCTAssertTrue(CoffeeLocator.shared.getCoffeeRegion(with: .fruit).lowercased() == "Ethiopia")
     }
 }
