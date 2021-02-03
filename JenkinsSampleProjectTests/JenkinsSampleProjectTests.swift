@@ -30,4 +30,8 @@ class JenkinsSampleProjectTests: XCTestCase {
         }
     }
 
+    
+    func testCoffeeRegion() throws {
+        XCTAssertTrue(CoffeeLocator.shared.getCoffeeRegion(with: .caramel).lowercased() == "colombia")
+    }
 }

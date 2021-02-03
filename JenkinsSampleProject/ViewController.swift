@@ -17,3 +17,22 @@ class ViewController: UIViewController {
 
 }
 
+enum Flavor {
+    case caramel
+    case fruit
+    
+}
+
+class CoffeeLocator {
+    static let shared = CoffeeLocator()
+    
+    func getCoffeeRegion(with flavor:Flavor) -> String {
+        switch flavor {
+        case .caramel:
+            return "Colombia"
+        case .fruit:
+            return "Ethiopia"
+        }
+        
+    }
+}
